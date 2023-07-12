@@ -3,7 +3,7 @@ CS193X Final Project
 
 Project Title: FitTrace
 Your Name: Rachel Yu
-Your SUNetID: yuyue01
+Your SUNetID: 
 
 Overview
 --------
