@@ -1,0 +1,47 @@
+// TODO: If you need to initialize your database with some documents, uncomment/adjust these lines and add insert statements.
+
+db = connect("project");
+db.dropDatabase();
+db.users.insertOne({
+  "id": "yy",
+  "name": "Rachel Yu",
+  "age": "22",
+  "gender": "Female",
+  "records": {
+    "Mon Jun 12 2023": {
+      "calories": 790,
+      "weight": 118,
+      "foodList": [
+        "Apple - 10 calories",
+        "Mile tea - 500 calories",
+        "Rice - 150 calories",
+        "Salad - 50 calories",
+        "Cherry - 80 calories"
+      ]
+    },
+    "Sun Jun 11 2023": {
+      "calories": 100,
+      "weight": 120,
+      "foodList": [
+        "Water - 0 calories",
+        "Egg - 100 calories"
+      ]
+    },
+    "Tue Jun 13 2023": {
+      "calories": 450,
+      "weight": 117,
+      "foodList": [
+        "Eggplants - 200 calories",
+        "Bread - 250 calories"
+      ]
+    },
+    "Thu Jun 15 2023": {
+      "calories": 700,
+      "weight": 120,
+      "foodList": [
+        "Noodles - 200 calories",
+        "Pizza - 500 calories"
+      ]
+    }
+  }
+});

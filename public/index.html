@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FitTrace</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+    <script type="module" src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <div class="widthContainer">
+        <div class="row">
+          <img class="brandImg" src="images/fitrace.jpg">
+          <h1 class="brand">FitTrace</h1>
+        </div>
+        <form id="loginForm">
+          <img class="loginImg" src="images/login.jpg">
+          <input name="userid" placeholder="User ID">
+          <button type="submit" name="login">Login</button>
+          <button type="button" name="listUsers" class="secondary">List Users</button>
+        </form>
+      </div>
+    </header>
+
+    <main id="welcome">
+      <div class="paper">
+        <h1>Welcome to <strong class="brand">FitTrace App</strong>!</h1>
+        <h2>Log in to view your records.</h2>
+      </div>
+    </main>
+
+    <main id="main" class="hidden">
+      <section id="sidebar" class="paper">
+        <section id="editPanel" class="paper">
+          <div class="profileRow">
+            <h2>Your Profile</h2>
+            <img class="profileImg" src="images/profile.png">
+          </div>
+          <div class="editItem">
+            <div class="row">
+              <label>User ID:</label>
+              <div id="idContainer"></div>
+            </div>
+          </div>
+
+          <form class="editItem" id="nameForm">
+            <label for="nameInput">Name:</label>
+            <div class="inputLine">
+              <input name="name" id="nameInput">
+              <button name="submit" id="nameSubmit"><img src="images/save.svg" alt="Save"></button>
+            </div>
+          </form>
+
+          <form class="editItem" id="ageForm">
+            <label for="ageInput">Age:</label>
+            <div class="inputLine">
+              <input name="age" id="ageInput">
+              <button name="submit" id="ageSubmit"><img src="images/save.svg" alt="Save"></button>
+            </div>
+          </form>
+
+          <form class="editItem" id="genderForm">
+            <label for="genderInput">Gender:</label>
+            <div class="inputLine">
+              <input name="gender" id="genderInput">
+              <button name="submit" id="genderSubmit"><img src="images/save.svg" alt="Save"></button>
+            </div>
+          </form>
+        </section>
+
+        <section id="calendarPanel" class="paper">
+          <div class="calendarRow">
+            <h2>Choose the date</h2> 
+            <img class="calendarImg" src="images/calendar.jpg">
+          </div>
+          <div class="calendarContainer">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p> </p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <div class="contentContainer">
+        <div class="widthContainer">
+          <section id="dietRecord">
+            <div class="row">
+              <img class="image" src="images/food.jpg">
+              <h2>Enter your daily diet</h2>
+            </div>
+            <input type="text" id="foodInput" placeholder="Enter food">
+            <input type="number" id="caloriesInput" placeholder="Enter calories">
+            <button type="button" id="addFoodBtn">Add</button>
+          </section>
+  
+          <section id="weightRecord">
+            <div class="row">
+              <img class="image" src="images/weight.jpg">
+              <h2>Enter your daily weight</h2>
+            </div>
+            <input type="number" id="weightInput" placeholder="Enter weight (lbs)">
+            <button type="button" id="recordWeightBtn">Record</button>
+          </section>
+  
+        </div>
+
+        <div class="divider">
+          <!-- <h3>-----------------------------------------------</h3> -->
+          <h3>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h3>
+        </div>
+
+        <section id="summary">
+          <div class="row">
+            <img class="image" src="images/summary.jpg">
+            <h2>Summary for Today</h2>
+          </div>
+          <div class="row">
+            <p>Food list:</p>
+            <button type="button" id="clearBtn">Clear List</button>
+          </div>
+          <ul id="foodList"></ul>
+          <p id="caloriesTotal">Total Calories: 0 calories</p>
+          <p id="todayWeight"> Weight: 0 lbs</p>
+          <button type="button" id="saveBtn">SAVE</button>
+ 
+          
+        </section>
+      </div>
+      
+    </main>
+
+    <script src="./js/calendar.js" type="module"></script>
+    <script src="./js/app.js " type="module"></script>
+    
+  </body>
+  
+</html>

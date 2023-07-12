@@ -1,0 +1,40 @@
+CS193X Final Project Milestone
+==============================
+
+Project Title: FitTrace
+Your Name: Rachel Yu
+Your SUNetID: yuyue01
+
+Overview
+--------
+<TODO: Let us know how things are going. What have you explored, looked into, worked on, and tried so far? What do you have left to do? Are you running into any particular difficulties or blockers?>
+I have explored basic frontend design including the login place, calendar and input field, I'm working on add event listener to each button in javascript and also api endpoints. I have run into a difficulty to understand what my endpoints should be, I'm still working on it and I think I'll be figure out or ask for help in OH.
+
+Project Changes
+---------------
+<TODO: If you are planning to change something about your project (scope, features, etc.) from your proposal, please let us know what changes you're planning to make.>
+
+The app will only focus on the daily diet records with calories and weight records. I also add a calendar for user to choose to view the data of each date. Depending on the time, the visualization of weight over time might be implemented in the end.
+
+
+Implementation Details
+----------------------
+<TODO: Describe how you will implement (or have implemented) a specific feature or part of the project. Include specific details about the frontend (e.g. what classes you'll have and how the user interface will work) and backend (e.g. what API endpoints you'll use and how you'll store the data). As with the proposal, this can change later; we just want to make sure you've thought through some of these details.>
+
+I just added a calendar feature: the user can choose a date to view that day's calories and weight. But haven't implement button event listener accordingly. I will finish implementation of adding more button on each date and calculation of calories later. I'll use User class as one of homework since each user need to log in to see his/her data, and an App class as normal, probably will have other classes during implementation. For API endpoints, I NEED api/get/user, api/get/user/id, also api/post/user, similar to assign3.2.
+
+
+External libraries and code
+---------------------------
+<TODO: Identify any external libraries or code you are using or plan to use, and describe how it fits into your project. Please include everything even if you already listed it in your proposal.>
+Using code from assign3.2
+
+
+Collaboration and resources
+---------------------------
+<TODO: Identify any sources you have consulted or plan to consult, except for code listed above. Include those you listed previously in your proposal.>
+None
+
+Anything else?
+--------------
+<TODO: Anything else you'd like the teaching staff to know?>

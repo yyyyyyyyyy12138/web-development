@@ -1,0 +1,209 @@
+@import "./calendar.css";
+
+/***** Generic Containers ******/
+*{
+  font-family:"Quicksand", sans-serif;
+}
+
+.widthContainer {
+  flex-grow: 1;
+  max-width: 1280px;
+}
+
+.paper {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+/***** Header *****/
+
+.brand {
+  color: #339f22;
+  font-weight: bold;
+}
+
+.brandImg {
+  width: 4.5em;
+  height: 3.5em;
+  margin-right: 10px;
+}
+
+
+#header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(219, 244, 222);
+  border-bottom: 1px solid #ccd6dd;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+#header .widthContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  font-weight: 600;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#loginForm input {
+  width: 12em;
+}
+
+.loginImg {
+  width: 3em;
+  height: 2.5em;
+}
+
+/***** Welcome *****/
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome.hidden {
+  display: none;
+}
+
+#welcome h1 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+#welcome .paper {
+  text-align: center;
+  width: 50%;
+}
+
+/***** Main *****/
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  animation: fadein 1s;
+}
+
+#main.hidden {
+  display: none;
+}
+
+#main .contentContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 2rem;
+}
+
+#main .widthContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.divider {
+  margin-top: 2rem;
+}
+
+#summary {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-right: 2rem;
+  margin-left: 9rem;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row label {
+  margin-right: 10px;
+}
+
+.profileRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.profileImg {
+  border: 1px solid #ccd6dd;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 15px;
+}
+
+.calendarImg {
+  border: 1px solid #ccd6dd;
+  border-radius: 20%;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 15px;
+}
+
+.calendarRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.image {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 15px;
+}
+
+
+
+#foodList {
+  list-style-type: disc; 
+  column-count: 2; 
+  column-gap: 4em; 
+}
+
+
+#clearBtn {
+  margin-left: 20px;
+}
+
+#saveBtn  {
+  margin-top: 15px;
+  width: 100px;
+  height: 40px; 
+  font-size: 1.1rem; 
+  border-radius: 5px;
+  background-color: #74b66a;
+  color:white;
+}
